@@ -7,19 +7,27 @@ public class Sec4Lec28Methods {
         int levelCompleted = 5;
         int bonus = 100;
 
-        calculateScore(gameOver,score,levelCompleted,bonus);
+        //passing variables
+        int highScore = calculateScore(gameOver,score,levelCompleted,bonus);
 
-        calculateScore(true,10000,8,200);
+        System.out.println("Your final Score was " + highScore);
+
+        //hardcoded values
+        highScore =calculateScore(true,10000,8,200);
+
+        System.out.println("Your final Score was " + highScore);
+
+
 
     }
 
-    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         if(gameOver) {
             int finalScore = score + (levelCompleted * bonus);
-            finalScore += 1000;
-            System.out.println("Your final score is " + finalScore);
+            finalScore += 2000;
+            return finalScore;
         }
-
+        return -1;
     }
 
 
