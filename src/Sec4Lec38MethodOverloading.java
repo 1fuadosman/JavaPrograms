@@ -1,4 +1,4 @@
-public class Sec4Lect38MethodOverloading {
+public class Sec4Lec38MethodOverloading {
 
     /*
     Method overloading is a feature that allows us to have more than one method with the same

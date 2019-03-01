@@ -1,4 +1,4 @@
-public class Sec4Lect36CodingChallange2 {
+public class Sec4Lec36CodingChallange2 {
 
     public static void main(String[] args) {
         printConversion(6);
