@@ -1,7 +1,7 @@
 public class Sec4Lect36CodingChallange2 {
 
     public static void main(String[] args) {
-        printConversion(-2);
+        printConversion(6);
 
     }
 
@@ -13,5 +13,16 @@ public class Sec4Lect36CodingChallange2 {
             System.out.println("Invalid value");
         }
     }
+
+    public long toMilesPerHour(double kilometersPerHour) {
+
+        if(kilometersPerHour< 0) {
+            return -1;
+        } else {
+            return Math.round(kilometersPerHour * 0.621371);
+        }
+    }
+
+
 
 }
