@@ -1,4 +1,4 @@
-public class Sec5Lec4ChallangeDayOfTheWeek {
+public class Sec5Lec44ChallangeDayOfTheWeek {
 
     public static void main(String [] args) {
         printDayOfTheWeek(2);
