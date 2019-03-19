@@ -1,4 +1,4 @@
-package com.OOPS1;
+package com.OOPS6;
 
 public class Car {
     private int doors;
