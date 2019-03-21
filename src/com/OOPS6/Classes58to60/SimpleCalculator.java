@@ -1,4 +1,4 @@
-package com.OOPS6;
+package com.OOPS6.Classes58to60;
 
 public class SimpleCalculator {
     private double firstNumber;
