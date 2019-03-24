@@ -1,4 +1,4 @@
-package com.OOPS6.Classes58to60;
+package com.OOPS6.Classes58to61;
 
 public class Main {
 
