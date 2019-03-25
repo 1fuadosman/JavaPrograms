@@ -1,38 +1,40 @@
-package com.OOPS6.Classes58to61.Challange;
+package com.OOPS6.Constructors61to62;
 
 public class Account {
-    private int accountNumber;
-    private int balance;
+    private double accountNumber;
+    private double balance;
     private String customerName;
     private String customerEmail;
-    private int customerPhoneNUmber;
+    private double customerPhoneNumber;
 
-    public void setAccountNumber(int accountNumber) {
+    public Account(double accountNumber, double balance, String customerName, String customerEmail, double customerPhoneNumber) {
+        System.out.println("Constructor with parameter called");
         this.accountNumber = accountNumber;
-    }
-
-    public void setBalance(int balance) {
         this.balance = balance;
-    }
-
-    public void setCustomerName(String customerName) {
         this.customerName = customerName;
-    }
-
-    public void setCustomerEmail(String customerEmail) {
         this.customerEmail = customerEmail;
+        this.customerPhoneNumber = customerPhoneNumber;
     }
 
-    public void setCustomerPhoneNUmber(int customerPhoneNUmber) {
-        this.customerPhoneNUmber = customerPhoneNUmber;
+    public Account(String customerName, String customerEmail, double customerPhoneNumber) {
+        this(9999,5555, customerName,customerEmail,customerPhoneNumber);
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhoneNumber = customerPhoneNumber;
     }
 
-    public int getAccountNumber() {
+    //Note the below constructor is being called by the above
+    //The this, sets default parameters below if the the Account constructor has no parameters
+    public  Account() {
+        this(20220, 2122, "Fuad", "abc@gmail.com", 22112);
+        System.out.println("Account constructor with empty parameters");
+    }
 
+    public double getAccountNumber() {
         return accountNumber;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
@@ -44,11 +46,11 @@ public class Account {
         return customerEmail;
     }
 
-    public int getCustomerPhoneNUmber() {
-        return customerPhoneNUmber;
+    public double getCustomerPhoneNUmber() {
+        return customerPhoneNumber;
     }
 
-    public void deposit(int deposit) {
+    public void deposit(double deposit) {
         if(deposit>0) {
             this.balance = this.balance + deposit;
             System.out.println("You have deposited £" + deposit + ". Your new balance is £" + this.balance + ".");
@@ -57,7 +59,7 @@ public class Account {
         }
     }
 
-    public  void withdrawal(int withraw) {
+    public  void withdrawal(double withraw) {
         if(withraw<0) {
             System.out.println("Incoorect withdrawal");
         }
