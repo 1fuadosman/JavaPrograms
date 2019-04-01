@@ -1,4 +1,4 @@
-package com.OOPS6.Inheritance63to64;
+package com.OOPS6.Inheritance63to69;
 
 public class InheritanceConceptually {
     /*
